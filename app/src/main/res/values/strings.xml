@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Minutnik</string>
+    <string name="btnStop">Stop</string>
+    <string name="btnStart">Start</string>
+    <string name="btnPause">Pause</string>
+    <string name="textView">Minutnik</string>
+    <string name="Plus">+</string>
+    <string name="Minus">-</string>
+</resources>
