@@ -1,12 +1,16 @@
 package com.example.zadanie4
 
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        var orientation=resources.getConfiguration().orientation
+        when(orientation) {
+            Configuration.ORIENTATION_LANDSCAPE -> setContentView(R.layout.activity_main_landscape)
+            Configuration.ORIENTATION_PORTRAIT -> setContentView(R.layout.activity_main_portait)
+        }
     }
 }
